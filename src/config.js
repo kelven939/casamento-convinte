@@ -12,7 +12,7 @@ export const CONFIG = {
 };
 
 export const PROGRAMA = [
-  { hora: "11h00", titulo: "Cerimónia", local: "Igreja Assembleia de Deus (Kongolote)" },
+  { hora: "11h00", titulo: "Cerimónia", local: "Igreja Assembleia de Deus (Kongolote). Paragem Cemitério, Rua das Bombas" },
   { hora: "14h30", titulo: "Secção de fotos", local: "Salão Princesa Eventos" },
   { hora: "15h00", titulo: "Copo de água", local: "Salão Princesa Eventos" },
 ];
