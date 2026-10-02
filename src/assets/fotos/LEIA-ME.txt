@@ -1,4 +1,2 @@
-Coloque aqui as fotos dos noivos (jpg, jpeg, png ou webp).
-A primeira (por ordem alfabética) aparece grande, em arco. Use nomes como:
+A primeira (por ordem alfabética):
 01-noivos.jpg, 02-passeio.jpg, 03-igreja.jpg ...
-Dica: reduza cada foto para cerca de 1600 px de largura (até 400 KB) para o site abrir rápido.
