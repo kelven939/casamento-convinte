@@ -53,6 +53,9 @@ export default function Hero({ convidado }) {
           <br />
           (Kongolote)
         </p>
+        <p>
+          (Paragem Cemitério, Rua das Bombas)
+        </p>
 
         <Contagem />
       </div>
