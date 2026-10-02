@@ -40,7 +40,7 @@ export default function Gerador() {
 
   return (
     <main className="gen">
-      <h1>Gerador de convites</h1>
+      <h1>Convites</h1>
       <p>Escreva um nome por linha. Cada convidado recebe um link com o seu nome na capa.</p>
 
       <label htmlFor="base">Endereço do site do convite</label>
