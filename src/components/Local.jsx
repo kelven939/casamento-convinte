@@ -5,7 +5,7 @@ export default function Local() {
     <section className="place gold-band" aria-labelledby="t-local">
       <h2 id="t-local" className="section-title dark">Salão: Quinta Maloa Eventos</h2>
       <p className="directions">
-        Endereço: Bairro Mumemo paragem Agostinho Neto.
+        Endereço: Bairro Mumemo, paragem Agostinho Neto.
         <br />
         Em Marracuane.
       </p>
