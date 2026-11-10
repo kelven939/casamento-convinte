@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { CONFIG } from "../config.js";
 import { baixarICS } from "../calendario.js";
+import { useMesa } from "../useConvidado.js";
 
 export default function Rsvp({ convidado }) {
+  const mesa = useMesa();
   const [nome, setNome] = useState(convidado);
-  const [pessoas, setPessoas] = useState(1);
   const [erro, setErro] = useState(false);
 
   const enviar = (vai) => {
@@ -16,7 +17,7 @@ export default function Rsvp({ convidado }) {
     setErro(false);
     const texto = vai
       ? `Olá! Sou ${n} e confirmo a minha presença no casamento de ${CONFIG.noivos} (21 de Novembro, 11h).` +
-        (pessoas > 1 ? ` Vamos ser ${pessoas} pessoas.` : "") +
+        (mesa ? ` A minha mesa é: ${mesa}.` : "") +
         " Parabéns aos noivos!"
       : `Olá! Sou ${n}. Infelizmente não poderei estar presente no casamento de ${CONFIG.noivos}. Desejo-vos toda a felicidade!`;
     window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(texto)}`, "_blank", "noopener");
@@ -38,13 +39,12 @@ export default function Rsvp({ convidado }) {
           onChange={(e) => setNome(e.target.value)}
         />
 
-        <label htmlFor="guest-count">Quantas pessoas vão consigo?</label>
-        <select id="guest-count" value={pessoas} onChange={(e) => setPessoas(Number(e.target.value))}>
-          <option value={1}>Só eu</option>
-          {[2, 3, 4, 5].map((n) => (
-            <option key={n} value={n}>{n} pessoas</option>
-          ))}
-        </select>
+        {mesa && (
+          <div className="table-card">
+            <span>A sua mesa</span>
+            <b>{mesa}</b>
+          </div>
+        )}
 
         <div className="actions">
           <button className="btn" type="button" onClick={() => enviar(true)}>Confirmar presença</button>
