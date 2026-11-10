@@ -351,3 +351,26 @@ section { padding: 5rem 1.75rem; }
 .lista .url { font-size: .9rem; opacity: .7; word-break: break-all; }
 .lista .row { display: flex; gap: .6rem; flex-wrap: wrap; }
 .lista .btn { padding: .5rem 1rem; font-size: .95rem; }
+
+/* ---------- MESA DO CONVIDADO ---------- */
+
+.table-card {
+  margin-top: 1.4rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--gold);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+}
+.table-card span { opacity: .8; }
+.table-card b {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  color: var(--gold);
+}
+.gen .hint { font-size: .95rem; opacity: .75; margin: .4rem 0 0; }
+.gen .hint code { color: var(--gold); }
+.mesa-tag { font-weight: 400; opacity: .8; }
